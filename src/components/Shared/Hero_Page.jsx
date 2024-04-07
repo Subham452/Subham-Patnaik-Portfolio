@@ -12,7 +12,7 @@ const Hero_Page = () => {
 
                 <section className='flex items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-t from-white to-slate-200'>
                     <img className='bg-red-800/0 -mb-[17.7rem] z-[4] lg:-mb-[0rem] w-auto object-cover  -[3] h-[28rem] absolute lg:h-[48rem] ' src={logo} alt="" />
-                    <span className='font-bold  text-[5rem] lg:text-[16rem] z-[2] mt-40 '>S U B H A M</span>
+                    <span className='font-bold  text-[4rem] lg:text-[16rem] z-[2] mt-40 '>S U B H A M</span>
 
 
                     <div className='absolute lg:-mr-[70rem] -mt-[20rem] flex z-[4] flex-col items-center justify-center h-auto bg-red-100/0   w-auto'>
@@ -33,7 +33,7 @@ const Hero_Page = () => {
                 </section>
 
                 <section className='flex items-center justify-center w-screen h-20 mx-0 -mt-[3.7rem] bg-gradient-to-t from-black/10 to-white'>
-                    <div className='h-14 -mt-20 px-3 bg-white/30 border-white brightness-200 border-2 z-[4] rounded-full w-auto justify-center items-center flex flex-row gap-4 '>
+                    <div className='h-14 -mt-[15rem] lg:mt-0 px-3 bg-white/30 border-white brightness-200 border-2 z-[4] rounded-full w-auto justify-center items-center flex flex-row gap-4 '>
                         <span className='h-10 w-[10rem] justify-center items-center flex text-white font-[0.3rem] bg-orange-800 rounded-full  text-xl'>
                             Portfolio
                         </span>

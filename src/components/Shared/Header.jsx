@@ -84,8 +84,8 @@ const Header = ({ name, img }) => {
                     <div className='' onClick={() => { setActive(!active) }}>
                        {active? <IoCloseOutline size={29} /> : <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12" /><line x1="4" x2="20" y1="6" y2="6" /><line x1="4" x2="20" y1="18" y2="18" /></svg>}
                     </div>
-                    <div className={` shadow-lg mt-[27rem] absolute flex justify-between items-center flex-col transition-all duration-300  bg-slate-100/90 ${active ? "flex h-[23rem] -ml-[15.6rem] mt-[31.3rem] w-[20rem]" : "hidden"}`}  onClick={()=>{ setActive(!active)}} >
-                        <div className='flex flex-col items-start justify-center w-full h-auto gap-5 pl-10 mt-10 font-semibold'>
+                    <div className={` shadow-lg  absolute flex justify-between items-center flex-col transition-all duration-300  bg-slate-100/90 ${active ? "flex h-[23rem] pt-5 -ml-[15.6rem] mt-[27.3rem] w-[20rem]" : "hidden"}`}  onClick={()=>{ setActive(!active)}} >
+                        <div className='flex flex-col items-start justify-center w-full h-auto gap-5 pl-10 font-semibold'>
                             {
                                 route.map((i, j) => (
                                     <Link 
@@ -107,7 +107,7 @@ const Header = ({ name, img }) => {
                                     <h1>{name.charAt(0)}</h1>}
                             </div>
                             <div className='flex flex-col items-end justify-end gap-2 '>
-                                <span>{name ? `Welcome - ${name}` : " Please Login/Register"}</span>
+                                <div>{name ? `Welcome - ${name}` : <span onClick={()=>{ navigate("/Register") }}>Please Login/Register</span>}</div>
                                 <span className='font-bold text-red-700' onClick={logout}>{name?"Log out":""}</span>
                             </div>
                         </div>
@@ -134,7 +134,7 @@ const Header = ({ name, img }) => {
 
                     <div className='flex flex-row items-center justify-between gap-7'>
                         <div className='' onClick={() => { setMenu(true) }}>
-                            {name ? `Welcome - ${name}` : "Login/Register"}
+                            {name ? `Welcome - ${name}` : <div onClick={()=>{ navigate("/Regisister")}}>Login/Register</div>}
                         </div>
 
                         <div className='flex items-center justify-center w-10 h-10 overflow-hidden text-white rounded-full bg-violet-900' onClick={() => { setMenu(!menu) }}>

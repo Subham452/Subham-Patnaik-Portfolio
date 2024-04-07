@@ -13,7 +13,7 @@ const About_My_Social = () => {
       <div id="Projects" className='flex flex-col items-center justify-center w-screen h-auto pt-20 bg-white '>
         <section className='flex flex-col items-center justify-between w-full h-full mx-10 bg-white '>
           <div className='flex items-center justify-between w-full h-auto px-10 '>
-            <div className='font-sans text-3xl font-bold lg:text-7xl text-slate-800/90'>Lets have look at<br />my Portfolio  <span className='text-orange-500'>Projects </span></div>
+            <div className='font-sans text-xl font-bold lg:text-7xl text-slate-800/90'>Lets have look at<br />my Portfolio  <span className='text-orange-500'>Projects </span></div>
 
             <div className='py-4 flex justify-center items-center text-2xl h-[3rem] w-[10rem] font-semibold text-white bg-orange-500 rounded-full lg:w-auto lg:h-auto lg:px-10 lg:text-3xl' onClick={() => { setActive(!active) }}>
               {active?"Preview":"See all"}
@@ -27,7 +27,7 @@ const About_My_Social = () => {
         <section className={`w-full mt-20 ${active ? "hidden" : "flex"} justify-center items-center  bg-white  h-auto  `}>
           <section className="grid w-auto h-auto grid-flow-row grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-10 ">
             <div className="flex items-center justify-center py-6 bg-green-400/0 ">
-              <div className=' flex-col shadow-lg shadow-orange-500/40 overflow-hidden mx-auto flex lg:w-[39rem] h-[27rem] w-[30rem] rounded-[2rem] justify-between items-center bg-slate-800 '>
+              <div className=' flex-col shadow-lg shadow-orange-500/40 overflow-hidden mx-auto flex lg:w-[39rem] h-[27rem] w-[20rem] rounded-[2rem] justify-between items-center bg-slate-800 '>
                 <div className=' h-[19rem] bg-black w-auto'>
                   <img className='object-cover w-full h-full my-auto ' src={logo2} alt="" />
                 </div>
@@ -53,7 +53,7 @@ const About_My_Social = () => {
             </div>
 
             <div className="flex items-center justify-center py-6 bg-green-400/0 ">
-              <div className=' flex-col shadow-lg shadow-orange-500/40 overflow-hidden mx-auto flex lg:w-[39rem] h-[27rem] w-[30rem] rounded-[2rem] justify-between items-center bg-slate-800 '>
+            <div className=' flex-col shadow-lg shadow-orange-500/40 overflow-hidden mx-auto flex lg:w-[39rem] h-[27rem] w-[20rem] rounded-[2rem] justify-between items-center bg-slate-800 '>
                 <div className=' h-[19rem] w-full'>
                   <img className='object-cover h-full my-auto ' src={logo1} alt="" />
                 </div>
@@ -81,7 +81,7 @@ const About_My_Social = () => {
             </div>
 
             <div className="flex items-center justify-center py-6 bg-green-400/0 ">
-              <div className=' flex-col shadow-lg shadow-orange-500/40 overflow-hidden mx-auto flex lg:w-[39rem] h-[27rem] w-[30rem] rounded-[2rem] justify-between items-center bg-slate-800 '>
+            <div className=' flex-col shadow-lg shadow-orange-500/40 overflow-hidden mx-auto flex lg:w-[39rem] h-[27rem] w-[20rem] rounded-[2rem] justify-between items-center bg-slate-800 '>
                 <div className=' h-[19rem] w-full'>
                   <img className='object-cover h-full my-auto ' src={logo} alt="" />
                 </div>
@@ -109,7 +109,7 @@ const About_My_Social = () => {
               </div>
             </div>
 
-            <div className=' flex-col lg:mt-[1.4rem] shadow-lg shadow-orange-500/40 overflow-hidden gap-20 mx-auto flex lg:w-[39rem] h-[27rem] w-[30rem] rounded-[2rem] justify-center items-center bg-slate-800 '>
+            <div className=' flex-col shadow-lg shadow-orange-500/40 overflow-hidden mx-auto flex lg:w-[39rem] h-[27rem] w-[20rem] rounded-[2rem] justify-center items-center gap-10 bg-slate-800 '>
               <div class=" shadow rounded-md p-4 max-w-sm w-full mx-auto">
                 <div class="animate-pulse flex space-x-4">
                   <div class="rounded-full bg-slate-700 h-10 w-10"></div>
